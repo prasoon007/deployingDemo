@@ -12,7 +12,7 @@ app.get("/about", (req, res) => {
     res.render("about");
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
     console.log("SERVER STARTED ON PORT 3000");
 })
 
